@@ -1,0 +1,24 @@
+node_modules/
+
+src/App.js
+src/index.js
+src/Routing.js
+
+src/assets/**/*.*
+src/components/**/*.*
+src/store/**/*.js
+src/utility/**/*.js
+src/views/**/*.js
+
+styles/**/*.scss
+
+
+
+
+
+# -------------------------
+# BEGIN Whitelisted Files
+# -------------------------
+
+# track these files, if they exist
+!.gitignore
