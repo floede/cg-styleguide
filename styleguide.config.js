@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  styleguideDir: "docs/",
   skipComponentsWithoutExample: true,
   require: [path.join(__dirname, "styles/styleguidist.scss")],
   sections: [

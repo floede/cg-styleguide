@@ -54,17 +54,17 @@
     box-sizing: border-box;
   }
 
+  &--grey-background {
+    background-color: $white;
+    &:hover {
+      background-color: $light-grey;
+    }
+  }
   &--danger {
     background-color: $white;
     &:hover {
       background-color: $danger-red;
       color: $white;
-    }
-  }
-  &--grey-background {
-    background-color: $white;
-    &:hover {
-      background-color: $light-grey;
     }
   }
 }
