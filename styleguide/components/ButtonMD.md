@@ -167,3 +167,49 @@ Button variations:
     Raised
   </ButtonMD>
 ```
+
+Icon row:
+
+```jsx
+          <ButtonMD
+            variation="flat"
+            onClick={this.onClickLike}
+            icon={"icon-levelstats_like"}
+            class=""
+          >
+            100
+          </ButtonMD>
+
+          <ButtonMD
+            variation="flat"
+            onClick={this.onClickFavourite}
+            icon={"icon-levelstats_favourites"}
+            class=""
+          >
+            0
+          </ButtonMD>
+
+
+        <span class="divider" />
+
+          <ButtonMD
+            variation="flat"
+            disabled
+            onClick={null}
+            icon={"icon-levelstats_plays"}
+            class="dark-grey"
+          >
+            5
+          </ButtonMD>
+
+          <ButtonMD
+            variation="flat"
+            disabled
+            onClick={null}
+            icon={"icon-levelstats_comments"}
+            class="dark-grey"
+          >
+            10
+          </ButtonMD>
+
+```

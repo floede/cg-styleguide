@@ -1,7 +1,7 @@
 import "./ButtonMD.scss";
 import React, { Component } from "react";
-import { Icon } from "./../../src/components/simple/IconFont";
-import { Button } from "react-md";
+//import { Icon } from "./../../src/components/simple/IconFont";
+import { Button, FontIcon } from "react-md";
 import classNames from "classnames";
 import propTypes from "prop-types";
 
@@ -16,11 +16,14 @@ export default class ButtonMD extends Component {
     onClick: propTypes.func,
     type: propTypes.string,
     variation: propTypes.string,
-    fullWidth: propTypes.bool
+    fullWidth: propTypes.bool,
+    icon: propTypes.string,
+    disabled: propTypes.bool
   };
 
   render() {
     const btnClass = classNames("btn", [`btn--${this.props.variation}`], {
+      [`btn--${this.props.class}`]: this.props.class,
       "btn--large": this.props.size === "large",
       "btn--medium": this.props.size === "medium",
       "btn--small": this.props.size === "small" || !this.props.size,
@@ -57,13 +60,20 @@ export default class ButtonMD extends Component {
         break;
     }
 
+    let btnIcon = this.props.icon || null;
+    let btnDisabled = {};
+    btnDisabled["disabled"] = this.props.disabled || false;
+
+    console.log("TEST DISABLED: ", this.props.disabled);
+
     return (
       <Button
         onClick={e => this.props.onClick}
-        //iconEl={<Icon name={"level_edit"} className={"icon-font--large"} />}
+        iconEl={<FontIcon className={btnIcon} />}
         className={btnClass} //"button light large full-width"
         {...btnType}
         {...btnVariation}
+        {...btnDisabled}
       >
         {this.props.children}
       </Button>

@@ -54,6 +54,14 @@
     box-sizing: border-box;
   }
 
+  &--dark-grey {
+    color: $dark-grey;
+  }
+
+  &--medium-grey {
+    color: $dark-grey;
+  }
+
   &--grey-background {
     background-color: $white;
     &:hover {
