@@ -1,0 +1,21 @@
+.tooltip {
+  &__content {
+    padding: 10px;
+    color: #fff;
+    background: #ff5351;
+    font-size: 14px;
+
+    &:before {
+      content: " ";
+      width: 12px;
+      height: 12px;
+      background: #000;
+      transform: rotate(45deg);
+      position: absolute;
+      top: 50%;
+      left: -6px;
+      display: inline-block;
+      margin-top: -23px;
+    }
+  }
+}

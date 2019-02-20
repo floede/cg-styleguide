@@ -20,6 +20,13 @@ module.exports = {
       usageMode: "collapse" // 'hide' | 'collapse' | 'expand'
     },
     {
+      name: "Tooltip",
+      //content: "docs/ui.md",
+      components: "./styleguide/components/Tooltip.js",
+      exampleMode: "collapse", // 'hide' | 'collapse' | 'expand'
+      usageMode: "collapse" // 'hide' | 'collapse' | 'expand'
+    },
+    {
       name: "Simple UI Components",
       //content: "docs/ui.md",
       components: "src/components/simple/*.js",
