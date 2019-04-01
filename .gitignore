@@ -22,3 +22,5 @@ styles/**/*.scss
 
 # track these files, if they exist
 !.gitignore
+!src/components/advanced/Popup.*
+
